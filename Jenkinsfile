@@ -22,7 +22,7 @@ pipeline {
                 script {
                     git 'https://github.com/AdminTurnedDevOps/go-webapp-sample.git'                    
                     image = docker.build("adminturneddevops/go-webapp-sample")
-                    sh "docker run -p 8090:8000 -d adminturneddevops/go-webapp-sample"
+                    sh "docker run -p 8095:8000 -d adminturneddevops/go-webapp-sample"
              
                 }
             }
